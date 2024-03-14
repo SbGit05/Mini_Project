@@ -19,4 +19,10 @@ body {
   background-color: rgb(107, 214, 220);
   padding-top: 3%;
   padding-bottom: 0%;
+  height: 580px;
+}
+
+.container1{
+  display: flex;
+  justify-content: end;
 }

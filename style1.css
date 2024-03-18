@@ -16,13 +16,27 @@ body {
 }
 
 .container-my-3{
-  background-color: rgb(107, 214, 220);
-  padding-top: 3%;
+  padding-top: 2%;
   padding-bottom: 0%;
   height: 580px;
+  width: 1000px;
 }
 
 .container1{
+  display: flex;
+  justify-content: end;
+}
+
+.bg-facets{
+  display: flex;
+  justify-content: center;
+}
+
+.bg-facets h1{
+  color: yellow;
+}
+
+.container{
   display: flex;
   justify-content: end;
 }

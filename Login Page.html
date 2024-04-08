@@ -1,3 +1,4 @@
+<?php include('server.php') ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EquiPay Login Page</title>
     <link rel = "stylesheet" href="Login.css">
-    <link rel = "Shortcut Icon" href = "Logo.jpeg">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> 
 </head>
@@ -16,14 +16,14 @@
                 <h1>EquiPay</h1>
                 <h4>Enter your Login Credentials</h4>
 
-                <form action="Home Page.html" method="post">
-
+                <form action="login.php" method="post">
+				<?php include('errors.php'); ?>
                 <div class="input-box">
                 <i class='bx bxs-user'></i>
                 <label for="first">
                     Username : 
                 </label>
-                <input type="text" id="first" name="first" placeholder="Enter your Username" required>
+                <input type="text" id="username" name="username" placeholder="Enter your Username" required>
                 </div>
 
                 <div class="input-box">
@@ -35,13 +35,13 @@
                 </div>
 
                 <div class="wrap">
-                    <button type="submit" onclick="solve()" style="border-radius: 16px; font-size: larger;">
+                    <button type="submit" name = "login_user" style="border-radius: 16px; font-size: larger;">
                         Submit
                     </button>
                 </div>
                 </form>
                 <h6>Not Registered?
-                <a href="Register Page.html" style = "text-decoration: none;">
+                <a href="register.php" style = "text-decoration: none;">
                     Create An Account
                 </a>
                 </h6>
@@ -54,4 +54,4 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
-</html>
+</html> 
